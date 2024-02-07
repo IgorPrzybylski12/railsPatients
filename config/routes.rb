@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :visits
+  resources :patients
   resources :doctors
   get 'home/index'
   root 'home#index'
